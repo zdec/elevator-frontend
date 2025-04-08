@@ -1,0 +1,11 @@
+/* src/styles/global.css */
+.app-container {
+    font-family: sans-serif;
+    padding: 1rem;
+}
+
+.main-layout {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}

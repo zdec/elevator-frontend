@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+/**
+ * @file App.js
+ * @description Componente raíz de la aplicación React que integra el simulador de ascensor.
+ * Renderiza el título principal y el componente <ControlPanel />.
+ * Aplica estilos globales desde global.css.
+ * @author Daniel Ciro
+ * @date 2025-04-08
+ */
 
+import React from 'react';
+import ControlPanel from './components/ControlPanel';
+import './styles/global.css';
+
+/**
+ * Componente principal de la aplicación.
+ * @returns {JSX.Element} Estructura principal del simulador de ascensor.
+ */
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1>🛗 Simulador de Ascensor</h1>
+      <div className="main-layout">
+        <ControlPanel />
+      </div>
     </div>
   );
 }
