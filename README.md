@@ -30,6 +30,6 @@ Este es el frontend de una aplicación que simula el funcionamiento de un ascens
 Clona el repositorio e instala las dependencias:
 
 ```bash
-git clone 
+git clone https://github.com/zdec/elevator-frontend.git
 cd elevator-frontend
 npm install
